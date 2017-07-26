@@ -24,6 +24,7 @@ function startGame() {
   });
   document.querySelector('.game-results .img').remove();
   document.querySelector(`.game-results`).insertAdjacentHTML('beforeend', `<div class="img"></div>`);
+  document.getElementById('text-field').textContent = '';
   document.getElementById('text-field').focus();
 }
 
@@ -53,7 +54,8 @@ btnStart.addEventListener('click', () => {
 });
 
 document.onkeyup = (event) => {
-  if (start) {
+  let letterNumber = /[A-Za-z]/;
+  if (start && letterNumber.test(event.key)) {
     if (guessArray.includes(event.key)) {
       alert("You've already chosen that letter!")
     } else {

@@ -12,6 +12,12 @@ body {
   margin: 0;
 }
 
+input:focus, input{
+  outline: none;
+  border: none;
+  color: transparent;
+}
+
 
 
 .correct-guesses {
