@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500" rel="stylesheet">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <title>Hangman</title>
+</head>
+<body>
+<div class="intro">
+  <h1 id="game-title">HANGMAN</h1>
+  <button class="start">START GAME</button>
+</div>
+<div class="game">
+  <h1>HANGMAN</h1>
+  <div class="restart">
+    <h1 class="loseTitle"><span class="lose">YOU LOSE!</span> PLAY AGAIN?!</h1>
+    <h1 class="winTitle"><span class="win">YOU WIN!</span> PLAY AGAIN?!</h1>
+    <button id="yes" class="replay">YES</button>
+    <button id="no" class="replay">NO</button>
+  </div>
+  <div class="game-results">
+    <div class="img"></div>
+  </div>
+  <div class="correct-guesses">
+  </div>
+</div>
+
+<script src="assets/js/hangman.js"></script>
+</body>
+</html>
