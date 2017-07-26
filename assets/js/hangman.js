@@ -7,6 +7,7 @@ let random, word, wordLength, wordArr, guessArray, errors, correctGuess, score;
 let start = false;
 
 function startGame() {
+  document.querySelector('input').focus();
   document.querySelector('.intro').style.display = 'none';
   document.querySelector('.game').style.display = 'grid';
   random = Math.floor(Math.random() * arr.length);

@@ -12,6 +12,8 @@ body {
   margin: 0;
 }
 
+
+
 .correct-guesses {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
