@@ -7,7 +7,6 @@ let random, word, wordLength, wordArr, guessArray, errors, correctGuess, score;
 let start = false;
 
 function startGame() {
-  document.querySelector('input').focus();
   document.querySelector('.intro').style.display = 'none';
   document.querySelector('.game').style.display = 'grid';
   random = Math.floor(Math.random() * arr.length);
@@ -25,6 +24,7 @@ function startGame() {
   });
   document.querySelector('.game-results .img').remove();
   document.querySelector(`.game-results`).insertAdjacentHTML('beforeend', `<div class="img"></div>`);
+  document.getElementById('text-field').focus();
 }
 
 function check(input) {
@@ -50,8 +50,6 @@ function addBodyPart(numErrors) {
 btnStart.addEventListener('click', () => {
   start = true;
   startGame();
-  console.log(guessArray);
-  console.log(wordArr);
 });
 
 document.onkeyup = (event) => {
