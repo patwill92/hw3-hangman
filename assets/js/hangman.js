@@ -24,8 +24,6 @@ function startGame() {
   });
   document.querySelector('.game-results .img').remove();
   document.querySelector(`.game-results`).insertAdjacentHTML('beforeend', `<div class="img"></div>`);
-  document.getElementById('text-field').textContent = '';
-  document.getElementById('text-field').focus();
 }
 
 function check(input) {

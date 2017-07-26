@@ -12,14 +12,6 @@ body {
   margin: 0;
 }
 
-input:focus, input{
-  outline: none;
-  border: none;
-  color: transparent;
-}
-
-
-
 .correct-guesses {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(20px, 1fr));
