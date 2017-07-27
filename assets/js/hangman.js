@@ -3,8 +3,8 @@ const gameDiv = document.querySelector('.correct-guesses');
 const btnStart = document.querySelector('.start');
 const btnYes = document.querySelector('#yes');
 const btnNo = document.querySelector('#no');
-let random, word, wordLength, wordArr, guessArray, errors, correctGuess, score;
-let start = false;
+var random, word, wordLength, wordArr, guessArray, errors, correctGuess, score;
+var start = false;
 
 function startGame() {
   document.querySelector('.intro').style.display = 'none';
